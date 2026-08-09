@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="script.js"></script>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dragon Haven</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<script src="script.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                 </button>
             </div>
         </nav>
-        <div class="modal">
+        <div class="menu" id="menu">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -48,103 +49,341 @@
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
-            <div class="modal__links">
-                <a href="#about-us" class="modal__link" onclick="closeMenu()">About Us</a>
-                <a href="#our-community" class="modal__link" onclick="closeMenu()">Our Community</a>
-                <a href="#events" class="modal__link" onclick="closeMenu()">Events</a>
-                <a href="#classes" class="modal__link" onclick="closeMenu()">Classes</a>
-                <a href="#donate" class="modal__link" onclick="closeMenu()">Donate</a>
-                <a href="#sign-up" class="modal__link modal__link--primary" onclick="closeMenu()">Sign Up</a>
+            <div class="menu__links">
+                <a href="#about-us" class="menu__link" onclick="closeMenu()">About Us</a>
+                <a href="#our-community" class="menu__link" onclick="closeMenu()">Our Community</a>
+                <a href="#events" class="menu__link" onclick="closeMenu()">Events</a>
+                <a href="#classes" class="menu__link" onclick="closeMenu()">Classes</a>
+                <a href="#donate" class="menu__link" onclick="closeMenu()">Donate</a>
+                <a href="#sign-up" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
             </div>
         </div>
         <header>
             <div class="container">
                 <div class="row">
                     <div class="header__content">
-                        <h1 class="header__title">Dragon Haven</h1>
+                        <h1 class="header__title">Welcome to Dragon Haven</h1>
                         <p class="header__subtitle">A sanctuary, a home away from home for Wiccans, Druids, Norse, Celtic, eclectic, solitary and pagans of all types.</p>
-                    <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-336" method="post" data-id="336" data-name="Dragon Haven Newsletter Sign Up Form">
-                        <div class="mc4wp-form-fields">
-                        <label>First Name</label>
-                        <input type="text" name="FNAME" required="">
-                     </p>
-<p>
-    <label>Last Name</label>
-    <input type="text" name="LNAME" required="">
-</p>
-<p>
-	<label for="email">Email address: 
-		<input type="email" id="email" name="EMAIL" placeholder="Your email address" required="">
-</label>
-</p>
-
-<p>
-	<input type="submit" value="Sign up">
-</p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1783315886"><input type="hidden" name="_mc4wp_form_id" value="336"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response"></div></form>
-                        <div class="header__email--input">
-                        <input type="email" placeholder="Enter your email">
-                        <button class="header__email--btn">Sign Up</button>
                     </div>
+                    <figure class="header__image">
+                        <img src="./images/arch.jpeg" alt="Dragon Haven Header Image" class="header__image--img">
+                    </figure>
                 </div>
             </div>
         </header>
     </section>
     <main>
-        <section id="features">
+        <section id="about-us">
             <div class="container">
                 <div class="row__narrow">
-                    <!--  -->Enter Features Section<!--  -->
+                    <h4 class="section__tag">About Us</h4>
+                    <h2 class="section__title">Who We Are</h2>
+                    <p class="section__description">Nestled on 14 peaceful acres in Crossville, Tennessee, Dragon Haven is a private campground and sanctuary created for the pagan community. Founded by Jenn and Larry, who purchased the property in 2012, Dragon Haven was built with a dream of creating a welcoming place where people of all pagan paths could gather, celebrate, and connect with nature. After nearly a decade of dedication and hard work, that dream became a reality in the fall of 2021.</p>
+                    <p>Today, our grounds feature a sacred Stone Circle, a fairy garden, ponds and waterfalls, nature trails, campsites, fire pits, gardens, and a shower house. During our events, guests can enjoy workshops, children's activities in the Dragon's Nest, a community kitchen, Artisan Alley, and seasonal celebrations honoring the Wheel of the Year.</p>
+                    <p>More than anything, Dragon Haven is about community. We welcome practitioners of all pagan traditions, along with those who are simply curious to learn. Our gatherings are family-friendly, LGBTQIA+ affirming, and rooted in kindness, respect, and inclusion.</p>
+                    <p>Whether you're joining us for your first sabbat celebration or returning to reconnect with friends, we hope you'll find what so many others have found at Dragon Haven—a place to celebrate, connect, and feel at home.</p>
                 </div>
             </div>
         </section>
-        <section id="quality">
+        <section id="our-community">
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter Quality Work Section<!--  -->
+                    <h4 class="section__tag">Our Community</h4>
+                    <h2 class="section__title">Community is at the Heart of Everything We Do</h2>
+                    <p class="section__description">We welcome Wiccans, Druids, Heathens, Norse, Celtic, eclectic practitioners, solitaries, seekers, and people from all pagan paths, as well as those who are simply curious to learn. Our family-friendly, LGBTQIA+ affirming gatherings are built on kindness, respect, and a shared love of nature and the Wheel of the Year. Whether you're attending your first pagan event or have been walking your path for years, you'll find a welcoming community where many arrive as guests but leave as friends—and often return as family. Here, you'll discover more than a place to camp or celebrate; you'll find a place to belong.</p>                
                 </div>
             </div>
         </section>
-        <section id="steps">
+        <section id="events">
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter Steps Section<!--  -->
+                    <figure class="events__logo">
+                        <img src="./images/new-wheel.png" alt="Wheel of the Year" class="events__logo--img">
+                    </figure>
+                    <div class="events__description">
+                        <div class="section__tag">EVENTS</div>
+                        <h2 class="section__title">Celebrating the Wheel of the Year</h2>
+                        <div class="two-column-text">
+                        <div class="events__list">
+                            <div class="event">
+                            <div class="event__description">
+                                <div class="event__title">Imbolc</div>
+                                <p class="event__text">A festival celebrating the beginning of spring and the return of light.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event__description">
+                            <div class="event__title">Ostara</div>
+                            <p class="event__text">A festival celebrating the spring equinox and the balance of light and dark.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event__description">
+                            <div class="event__title">Beltane</div>
+                            <p class="event__text">A festival celebrating the arrival of summer and the peak of fertility.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event__description">
+                            <div class="event__title">Litha</div>
+                            <p class="event__text">A festival celebrating the summer solstice and the peak of the sun's power.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event__description">
+                            <div class="event__title">Lammas</div>
+                            <p class="event__text">A festival celebrating the first harvest and the abundance of the earth.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event__description">
+                            <div class="event__title">Mabon</div>
+                            <p class="event__text">A festival celebrating the autumn equinox and the harvest season.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event__description">
+                            <div class="event__title">Samhain</div>
+                            <p class="event__text">A festival celebrating the end of the harvest season and honoring the ancestors.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event__description">
+                            <div class="event__title">Yule</div>
+                            <p class="event__text">A festival celebrating the winter solstice and the return of light.</p>
+                        </div>
+                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="values">
+        <section id="classes">
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter Values Section<!--  -->
+                    <div class="classes__description">
+                        <div class="section__tag">CLASSES</div>
+                        <h2 class="section__title">Learn and Grow with Our Classes</h2>
+                        <p class="section__description">Dragon Haven offers a variety of classes and workshops for all levels of experience, from beginners to seasoned practitioners. Our classes cover a wide range of topics, including herbalism, divination, paganism 101, and more. Join us to deepen your knowledge, connect with like-minded individuals, and enhance your spiritual journey.</p>
                 </div>
             </div>
         </section>
-        <section id="pricing">
-            <div class="container">
-                <div class="row">
-                    <!--  -->Enter Pricing Section<!--  -->
+       <section id="donations">  
+<div class="container">  
+<div class="row">  
+<div class="section__tag">donations</div>  
+<h2 class="section__title">  
+Support Dragon Haven  
+</h2>  
+<p class="section__para">  
+At Dragon Haven, we believe everyone should have the opportunity to celebrate, regardless of their financial situation. That's why we keep our events free or as affordable as possible.  
+</p>  
+<div class="donations">  
+<div class="donate">  
+<div class=" donate__stripe"></div>  
+<div class=" donate__top">  
+<div class=" donate__name">AT REGISTRATION</div>  
+<div class=" donate__price">$10.00</div>  
+<div class=" donate__duration">EACH EVENT</div>  
+</div>  
+<div class=" donate__middle">  
+<div class=" donate__target">While registering:</div>  
+<p class=" donate__feature">Donations can be sent via CashApp in advance.</p>   
+<p class=" donate__feature">You must register in advance to be allowed to attend.</p>
+</div>  
+<div class="donate__bottom">  
+<button class="donate__button">Register Here</button>  
+</div>  
+</div>  
+<div class="donate">  
+<div class="donate__stripe"></div>  
+<div class="donate__top">  
+<div class="donate__name">AT THE GATE</div>  
+<div class="donate__price">$15.00</div>  
+<div class="donate__duration">EACH EVENT</div>  
+</div>  
+<div class="donate__middle">  
+<div class="donate__target">Once you arrive at the gate</div>  
+<p class="donate__feature">You can pay with cash at check-in.</p>
+<p class="donate__feature">Check-in is available from 3:00 PM to 7:00 PM on Friday and Saturday 9:00 AM - 4:30 PM before the event.</p> 
+<p class="donate__feature">All attendees must check in before the event begins.</p>  
+</div>  
+<div class="donate__bottom">  
+<button class="donate__button">Register Here</button>  
+</div>  
+</div>  
+<div class="donate">  
+<div class="donate__stripe"></div>  
+<div class="donate__top">  
+<div class="donate__name">IN PLACE OF PAYMENT</div>  
+<div class="donate__price">$0.00</div>  
+<div class="donate__duration">EACH EVENT</div>  
+</div>  
+<div class="donate__middle">  
+<div class="donate__target">For Free Entry</div>   
+<p class="donate__feature">Help Around the Camp </p>  
+<p class="donate__feature">Do chores</p>  
+<p class="donate__feature">Or Participate in Activities. Such as helping with setup, cleanup, community breakfast, etc.</p>  
+</div>  
+<div class="donate__bottom">  
+<button class="donate__button">Register Here</button>  
+</div>  
+</div>  
+<svg  
+width="600"  
+height="600"  
+viewBox="0 0 600 600"  
+xmlns="http://www.w3.org/2000/svg"  
+class="donations__blob"  
+>  
+<g transform="translate(300,300)">  
+<path  
+d="M82,-98.3C129.8,-57.7,208.2,-54.1,229.6,-26.6C251.1,1,215.6,52.5,172.9,74.9C130.2,97.2,80.3,90.4,37.8,107.5C-4.8,124.7,-40,165.7,-63.3,162.3C-86.5,158.8,-97.8,110.9,-109.3,72.2C-120.7,33.5,-132.2,4.1,-140.1,-37.4C-147.9,-79,-152.1,-132.6,-128.1,-177.3C-104.1,-222.1,-52.1,-258,-17.5,-237.2C17.1,-216.4,34.3,-138.9,82,-98.3Z"  
+fill="#FFB4BC"  
+></path>  
+</g>  
+</svg>  
+</div>  
                 </div>
             </div>
         </section>
-        <section id="testimonials">
+        <section id="sign-up">
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter Testimonials Section<!--  -->
+                    <div class="sign-up__description">
+                        <div class="section__tag">SIGN UP</div>
+                        <h2 class="section__title">Join Our Community</h2>
+                        <p class="section__description">Stay connected with Dragon Haven by signing up for our newsletter. Receive updates on upcoming events, classes, and community news directly to your inbox.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="start">
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter "Start"/Call to action section<!--  -->
+                </div>
+            </div>
+        </section>
+<path 
+d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" 
+fill="rgb(80,17,204)" 
+></path> 
+</g> 
+</svg> 
+<svg viewBox="0 0 600 600" class="start__blob--2"> 
+<g transform="translate(300,300)"> 
+<path 
+d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" 
+fill="rgb(80,17,204)" 
+></path> 
+</g> 
+</svg> 
+<div class="start__container"> 
+<div class="start__row"> 
+<div class="start__title"> 
+Find your spiritual path with us. 
+</div> 
+<div class="start__buttons"> 
+<button class="start__button btn">Get Started</button> 
+<button class="start__button btn">Contact Us</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</main> 
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="row footer__row">
-            <!--  -->Enter Footer<!--  -->
+        <svg viewBox="0 0 600 600" class="footer__blob--1">
+        <g transform="translate(300,300)">
+          <path
+            d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+            fill="rgba(80,17,204)"
+          ></path>
+        </g>
+      </svg>
+      <svg viewBox="0 0 600 600" class="footer__blob--2">
+        <g transform="translate(300,300)">
+          <path
+            d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+            fill="rgba(80,17,204)"
+          ></path>
+        </g>
+      </svg>
+        <div class="row footer__row"></div>
+        <div class="footer__columns">
+            <div class="footer__column">
+            <div class="footer__column--title">Main</div>
+            <a class="footer__column--link">Blog</a>
+            <a class="footer__column--link">FAQs</a>
+            <a class="footer__column--link">Support</a>
+            <a class="footer__column--link">About Us</a>
+            </div>
+            <div class="footer__column">
+            <div class="footer__column--title">PRODUCT</div>
+            <a class="footer__column--link">Log In</a>
+            <a class="footer__column--link">Personal</a>
+            <a class="footer__column--link">Business</a>
+            <a class="footer__column--link">Team</a>
+            </div>
+          <div class="footer__column">
+            <div class="footer__column--title">PRESS</div>
+            <a class="footer__column--link">Logos</a>
+            <a class="footer__column--link">Events</a>
+            <a class="footer__column--link">Stories</a>
+            <a class="footer__column--link">Office</a>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column--title">TEAM</div>
+            <a class="footer__column--link">Career</a>
+            <a class="footer__column--link">Founders</a>
+            <a class="footer__column--link">Culture</a>
+            <a class="footer__column--link">Onboarding</a>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column--title">LEGAL</div>
+            <a class="footer__column--link">GDPR</a>
+            <a class="footer__column--link">Privacy Policy</a>
+            <a class="footer__column--link">Terms of Service</a>
+            <a class="footer__column--link">Disclaimer</a>
+          </div>
+          <div class="footer__divider"></div>
         </div>
+        <div class="footer__bottom">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <img src="images/dragon-haven-logo.png" alt="Dragon Haven Logo" class="footer__logo--img">
+                </a>
+            </div>
+            <div class="footer__bottom--text">© 2026 Dragon Haven. All rights reserved.</div>
+            <div class="footer__socials">
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                ></path>
+              </svg>
+            </a>
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"
+                ></path>
+              </svg>
+            </a>
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-
-</html>   
+  </body>
+</html>
